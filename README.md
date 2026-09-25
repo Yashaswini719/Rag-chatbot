@@ -4,15 +4,15 @@ A local Retrieval-Augmented Generation (RAG) chatbot that allows users to upload
 
 ## Features
 
-- 📄 PDF document upload and processing
-- 🔎 Hybrid search using Vector Search + BM25
-- 🎯 Reranking for improved retrieval relevance
-- 🧠 Conversation memory for follow-up questions
-- 🤖 Local LLM using Ollama
-- 🗄️ Qdrant vector database
-- ⚡ FastAPI backend
-- 💻 Streamlit frontend
-- 📚 Source information with generated answers
+-  PDF document upload and processing
+-  Hybrid search using Vector Search + BM25
+-  Reranking for improved retrieval relevance
+-  Conversation memory for follow-up questions
+-  Local LLM using Ollama
+-  Qdrant vector database
+-  FastAPI backend
+-  Streamlit frontend
+- Source information with generated answers
 
 ## Tech Stack
 
@@ -57,18 +57,19 @@ Rag-app/
 ├── Forntend/         # Streamlit UI
 └── main.py           # FastAPI entry point
 Run the Project
-
-Start Qdrant:
+```
+##Start Qdrant:
 
 docker run -d --name qdrant -p 6333:6333 qdrant/qdrant
 
-Start the FastAPI backend:
+##Start the FastAPI backend:
 
 uvicorn main:app --reload
 
-Start the Streamlit frontend:
+##Start the Streamlit frontend:
 
 streamlit run Forntend/app.py
-Workflow
+
+##Workflow
 
 Upload a PDF → Process and chunk the document → Generate embeddings → Store in Qdrant → Search using hybrid retrieval → Rerank results → Generate an answer using the local LLM.
