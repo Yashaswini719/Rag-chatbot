@@ -60,16 +60,16 @@ Run the Project
 ```
 ##Start Qdrant:
 
-docker run -d --name qdrant -p 6333:6333 qdrant/qdrant
+**docker run -d --name qdrant -p 6333:6333 qdrant/qdrant
 
 ##Start the FastAPI backend:
 
-uvicorn main:app --reload
+**uvicorn main:app --reload
 
 ##Start the Streamlit frontend:
 
-streamlit run Forntend/app.py
+**streamlit run Forntend/app.py
 
 ##Workflow
 
-Upload a PDF → Process and chunk the document → Generate embeddings → Store in Qdrant → Search using hybrid retrieval → Rerank results → Generate an answer using the local LLM.
+**Upload a PDF → Process and chunk the document → Generate embeddings → Store in Qdrant → Search using hybrid retrieval → Rerank results → Generate an answer using the local LLM.
