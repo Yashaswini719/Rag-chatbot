@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+*/venv/
+
+# Keep frontend source code
+!Forntend/
+!Forntend/app.py
+
+# Environment variables / secrets
+.env
+.env.*
+
+# Uploaded documents
+uploads/
+
+# Qdrant local storage
+qdrant_storage/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
